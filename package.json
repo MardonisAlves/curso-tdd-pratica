@@ -3,15 +3,19 @@
   "version": "1.0.0",
   "description": "Curso tdd na pratica",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "lint": "npx eslint  src/*.js",
+    "dev": "nodemon src/index.js lint",
     "hook-install": "prepush install",
     "hook-remove": "prepush remove",
-    "prepush" : "npm run lint",
+    "prepush": "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "prepush" : {
-    "tasks" : ["npm run prepush"]
+  "prepush": {
+    "tasks": [
+      "npm run prepush"
+    ]
   },
   "repository": {
     "type": "git",
@@ -34,6 +38,10 @@
   "devDependencies": {
     "eslint": "^8.20.0",
     "husky": "^8.0.1",
+    "nodemon": "^2.0.19",
     "prepush": "^3.1.11"
+  },
+  "dependencies": {
+    "axios": "^0.27.2"
   }
 }
