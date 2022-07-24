@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint  src/*.js",
-    "prepublish": "npm run lint",
+    "hook-install": "prepush install",
+    "hook-remove": "prepush remove",
+    "prepush" : "npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "prepush" : {
+    "tasks" : ["npm run prepush"]
   },
   "repository": {
     "type": "git",
@@ -28,6 +33,7 @@
   "homepage": "https://github.com/MardonisAlves/curso-tdd-pratica#readme",
   "devDependencies": {
     "eslint": "^8.20.0",
-    "husky": "^8.0.1"
+    "husky": "^8.0.1",
+    "prepush": "^3.1.11"
   }
 }
