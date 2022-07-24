@@ -1,0 +1,27 @@
+{
+  "name": "curso-tdd-pratica",
+  "version": "1.0.0",
+  "description": "Curso tdd na pratica",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MardonisAlves/curso-tdd-pratica.git"
+  },
+  "keywords": [
+    "Curso",
+    "java",
+    "script",
+    "na",
+    "pratica",
+    "tdd"
+  ],
+  "author": "Mardonis Alves B <mardonis.bezerra@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MardonisAlves/curso-tdd-pratica/issues"
+  },
+  "homepage": "https://github.com/MardonisAlves/curso-tdd-pratica#readme"
+}
